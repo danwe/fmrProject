@@ -1,0 +1,9 @@
+<div class="full-page">
+    <div class="inline left-side">
+        <app-select-view (sendDetailToList)="onSendDetailToList($event)"></app-select-view>
+    </div>
+    <div class="inline right-side">
+        <app-list [list]="list" (deleteDetail)="onDeleteDetail($event)"></app-list>
+    </div>
+</div>
+

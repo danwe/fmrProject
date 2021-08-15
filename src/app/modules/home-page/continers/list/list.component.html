@@ -1,0 +1,31 @@
+
+<div class="marginL-20">
+    <table>
+        <tr>
+            <th>op</th>
+            <th>Ask</th>
+            <th>AskSize</th>
+            <th>BasePrice</th>
+            <th>Bid</th>
+            <th>BidSize</th>
+            <th>LastPrice</th>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>UpdateId</th>
+        </tr>
+
+        <tr *ngFor="let obj of list">
+            <td><button (click)="onDelete(obj);"><span class="fa fa-times"></span></button> </td>
+            <td>{{obj.Ask}}</td>
+            <td>{{obj.AskSize}}</td>
+            <td>{{obj.BasePrice}}</td>
+            <td>{{obj.Bid}}</td>
+            <td>{{obj.BidSize}}</td>
+            <td>{{obj.LastPrice}}</td>
+            <td>{{obj.Name}}</td>
+            <td>{{obj.Symbol}}</td>
+            <td>{{obj.UpdateId}}</td>
+
+        </tr>
+    </table>
+</div>

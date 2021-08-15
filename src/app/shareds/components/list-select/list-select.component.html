@@ -1,0 +1,7 @@
+<div>
+    <div class="padding-vi" *ngFor="let select of listSelect">
+        <div class="select-view-list cursor" (click)="selected(select)"> 
+            {{ select.Name }} - {{ select.Symbol }}
+        </div>
+      </div>
+</div>
